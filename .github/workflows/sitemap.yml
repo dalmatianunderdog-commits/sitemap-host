@@ -5,7 +5,9 @@ on:
     paths:
       - sitemap.txt
       - generate_sitemap.py
+  workflow_dispatch:
 
+  
 jobs:
   build:
     runs-on: ubuntu-latest
