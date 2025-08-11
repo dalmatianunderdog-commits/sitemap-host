@@ -1,17 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://www.dalmatian-underdog.com/blog/cold-pressed-vs-refined-olive-oil</loc>
-    <lastmod>2025-08-11</lastmod>
-  </url>
+https://www.dalmatian-underdog.com/
+https://www.dalmatian-underdog.com/blog/cold-pressed-vs-refined-olive-oil
+https://www.dalmatian-underdog.com/blog/the-organic-certification-process-in-croatia-a-complete-guide-for-consumers-and-producers
 
 
-  <url>
-    <loc>https://www.dalmatian-underdog.com/blog/the-organic-certification-process-in-croatia-a-complete-guide-for-consumers-and-producers</loc>
-    <lastmod>2025-08-11</lastmod>
-  </url>
-
-
-</urlset>
