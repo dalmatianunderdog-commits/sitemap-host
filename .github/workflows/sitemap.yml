@@ -25,15 +25,16 @@ jobs:
       - name: Generate sitemap.xml
         run: python generate_sitemap.py
 
-      - name: Commit and push changes
+     - name: Commit and push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}
           git fetch
           git switch ${{ github.ref_name }}
           git add sitemap.xml
           git diff --staged --quiet || (git commit -m "🤖 Auto-update sitemap.xml" && git push origin HEAD:${{ github.ref_name }})
+
 
