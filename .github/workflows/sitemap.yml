@@ -7,7 +7,6 @@ on:
       - generate_sitemap.py
   workflow_dispatch:
 
-  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,7 +24,8 @@ jobs:
 
       - name: Generate sitemap.xml
         run: python generate_sitemap.py
-            - name: Commit and push changes
+
+      - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
